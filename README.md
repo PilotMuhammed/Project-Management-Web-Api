@@ -21,5 +21,5 @@ It demonstrates the implementation of modern backend standards and best practice
 
 Below is the ERD for the project database schema:
 
-![ERD Diagram](erd-diagram.png)
+![ERD Diagram](./img-Structure/ERD-Project.png)
 
