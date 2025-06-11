@@ -8,7 +8,7 @@ namespace ProjectManagement.Domain.Models
 {
     public class ActivityLog
     {
-        public int ActivityId { get; set; }
+        public int ActivityLogId { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }
 

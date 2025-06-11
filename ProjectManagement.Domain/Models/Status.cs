@@ -12,7 +12,7 @@ namespace ProjectManagement.Domain.Models
         public string Name { get; set; }
 
         public ICollection<Project> Projects { get; set; }
-        public ICollection<TaskWork> Tasks { get; set; }
+        public ICollection<TaskWork> TaskWorks { get; set; }
         public ICollection<Milestone> Milestones { get; set; }
     }
 
