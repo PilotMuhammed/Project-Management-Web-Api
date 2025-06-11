@@ -17,7 +17,7 @@ namespace ProjectManagement.Domain.Models
         public int StatusId { get; set; }
         public Status Status { get; set; }
 
-        public ICollection<Task> Tasks { get; set; }
+        public ICollection<TaskWork> Tasks { get; set; }
         public ICollection<Milestone> Milestones { get; set; }
     }
 

@@ -11,7 +11,7 @@ namespace ProjectManagement.Domain.Models
         public int PriorityId { get; set; }
         public string Name { get; set; }
 
-        public ICollection<Task> Tasks { get; set; }
+        public ICollection<TaskWork> Tasks { get; set; }
     }
 
 }

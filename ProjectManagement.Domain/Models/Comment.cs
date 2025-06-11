@@ -10,7 +10,7 @@ namespace ProjectManagement.Domain.Models
     {
         public int CommentId { get; set; }
         public int TaskId { get; set; }
-        public Task Task { get; set; }
+        public TaskWork Task { get; set; }
 
         public int UserId { get; set; }
         public User User { get; set; }

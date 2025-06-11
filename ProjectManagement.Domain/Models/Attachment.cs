@@ -10,7 +10,7 @@ namespace ProjectManagement.Domain.Models
     {
         public int AttachmentId { get; set; }
         public int TaskId { get; set; }
-        public Task Task { get; set; }
+        public TaskWork Task { get; set; }
 
         public string FileName { get; set; }
         public string FilePath { get; set; }

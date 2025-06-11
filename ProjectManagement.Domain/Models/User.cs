@@ -18,7 +18,7 @@ namespace ProjectManagement.Domain.Models
         public int RoleId { get; set; }
         public Role Role { get; set; }
 
-        public ICollection<Task> Tasks { get; set; }
+        public ICollection<TaskWork> Tasks { get; set; }
         public ICollection<Notification> Notifications { get; set; }
         public ICollection<Comment> Comments { get; set; }
         public ICollection<ActivityLog> ActivityLogs { get; set; }

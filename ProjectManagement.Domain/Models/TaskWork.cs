@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace ProjectManagement.Domain.Models
 {
-    public class Task
+    public class TaskWork
     {
         public int TaskId { get; set; }
 
