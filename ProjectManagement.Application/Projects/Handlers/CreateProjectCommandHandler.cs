@@ -1,12 +1,12 @@
 ﻿using MediatR;
 using ProjectManagement.Application.Projects.Commands;
 using ProjectManagement.Domain.Models;
-using ProjectManagement.Application.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Octopus.Client.Repositories;
 
 namespace ProjectManagement.Application.Projects.Handlers
 {
