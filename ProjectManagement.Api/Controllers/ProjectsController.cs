@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO;
+using ProjectManagement.Application.DTO.ProjectsDtos;
 using ProjectManagement.Application.Projects.Commands;
 using ProjectManagement.Application.Projects.Queries;
 
