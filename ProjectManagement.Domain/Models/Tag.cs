@@ -9,9 +9,9 @@ namespace ProjectManagement.Domain.Models
     public class Tag
     {
         public int TagId { get; set; }
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
-        public ICollection<TaskTag> TaskTags { get; set; }
+        public required ICollection<TaskTag> TaskTags { get; set; }
     }
 
 }

@@ -9,11 +9,11 @@ namespace ProjectManagement.Domain.Models
     public class Status
     {
         public int StatusId { get; set; }
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
-        public ICollection<Project> Projects { get; set; }
-        public ICollection<TaskWork> TaskWorks { get; set; }
-        public ICollection<Milestone> Milestones { get; set; }
+        public required ICollection<Project> Projects { get; set; }
+        public required ICollection<TaskWork> TaskWorks { get; set; }
+        public required ICollection<Milestone> Milestones { get; set; }
     }
 
 }
