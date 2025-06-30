@@ -9,10 +9,10 @@ namespace ProjectManagement.Domain.Models
     public class TaskTag
     {
         public int TaskId { get; set; }
-        public required TaskWork Task { get; set; }
+        public TaskWork? Task { get; set; }
 
         public int TagId { get; set; }
-        public required Tag Tag { get; set; }
+        public Tag? Tag { get; set; }
     }
 
 }

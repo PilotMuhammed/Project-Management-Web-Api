@@ -6,5 +6,9 @@ namespace ProjectManagement.Domain.Interfaces
     {
         Task<Priority> GetByIdAsync(int priorityId);
         Task<IEnumerable<Priority>> GetAllAsync();
+        Task AddAsync(Priority priority);
+        Task UpdateAsync(Priority priority);
+        Task DeleteAsync(int priority);
+
     }
 }

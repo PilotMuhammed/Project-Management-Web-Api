@@ -11,5 +11,11 @@ namespace ProjectManagement.Application.DTO.TaskTagDtos
         public int TaskId { get; set; }
         public int TagId { get; set; }
     }
+    public class TaskTagDto
+    {
+        public int TaskId { get; set; }
+        public int TagId { get; set; }
+    }
+
 }
 

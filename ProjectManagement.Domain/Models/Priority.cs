@@ -9,9 +9,9 @@ namespace ProjectManagement.Domain.Models
     public class Priority
     {
         public int PriorityId { get; set; }
-        public required string Name { get; set; }
+        public string? Name { get; set; }
 
-        public required ICollection<TaskWork> Tasks { get; set; }
+        public ICollection<TaskWork> Tasks { get; set; } = new List<TaskWork>();
     }
 
 }

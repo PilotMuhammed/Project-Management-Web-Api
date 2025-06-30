@@ -18,7 +18,7 @@ namespace ProjectManagement.Application.Projects.Handlers
         public async Task<IEnumerable<ProjectDto>> Handle(GetAllProjectsQuery request, CancellationToken cancellationToken)
         {
             var projects = await _repository.GetAllAsync();
-            // يمكنك استخدام AutoMapper أو Mapster هنا
+            //  AutoMapper أو Mapster هنا
             return projects.Select(p => new ProjectDto
             {
                 ProjectId = p.ProjectId,

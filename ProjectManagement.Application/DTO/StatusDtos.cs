@@ -9,7 +9,7 @@ namespace ProjectManagement.Application.DTO.StatusDtos
     public class StatusDto
     {
         public int StatusId { get; set; }
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
 }
 

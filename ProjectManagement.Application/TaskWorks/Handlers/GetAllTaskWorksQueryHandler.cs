@@ -23,10 +23,10 @@ namespace ProjectManagement.Application.TaskWorks.Handlers
         public async Task<IEnumerable<TaskWorkDto>> Handle(GetAllTaskWorksQuery request, CancellationToken cancellationToken)
         {
             var taskWorks = await _repository.GetAllAsync();
-            // تحويل الكيانات إلى DTOs (يمكنك استخدام AutoMapper/Mapster أو تحويل يدوي)
+            
             return taskWorks.Select(t => new TaskWorkDto
             {
-                TaskId = t.TaskId,
+                TaskId = t.TaskWorkId,
                 ProjectId = t.ProjectId,
                 AssignedUserId = t.AssignedUserId,
                 Title = t.Title,

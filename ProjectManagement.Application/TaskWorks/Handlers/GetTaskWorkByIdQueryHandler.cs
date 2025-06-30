@@ -28,7 +28,7 @@ namespace ProjectManagement.Application.TaskWorks.Handlers
 
             return new TaskWorkDto
             {
-                TaskId = t.TaskId,
+                TaskId = t.TaskWorkId,
                 ProjectId = t.ProjectId,
                 AssignedUserId = t.AssignedUserId,
                 Title = t.Title,

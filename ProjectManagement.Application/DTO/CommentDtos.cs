@@ -10,16 +10,18 @@ namespace ProjectManagement.Application.DTO.CommentDtos
     {
         public int TaskId { get; set; }
         public int UserId { get; set; }
-        public string Content { get; set; }
+        public string? Content { get; set; }
     }
 
     public class CommentDto
     {
         public int CommentId { get; set; }
-        public string Content { get; set; }
+        public string? Content { get; set; }
         public DateTime CreatedAt { get; set; }
-        public string UserFullName { get; set; }
-        public string TaskTitle { get; set; }
+        public string? UserFullName { get; set; }
+        public string? TaskTitle { get; set; }
+        public int TaskId { get; set; }
+        public int UserId { get; set; }
     }
 }
 

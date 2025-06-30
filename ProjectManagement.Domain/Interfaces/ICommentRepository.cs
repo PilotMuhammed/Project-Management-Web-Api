@@ -8,6 +8,7 @@ namespace ProjectManagement.Domain.Interfaces
         Task<IEnumerable<Comment>> GetAllAsync();
         Task AddAsync(Comment comment);
         Task DeleteAsync(int commentId);
+        Task UpdateAsync(Comment comment);
         Task<IEnumerable<Comment>> GetByTaskWorkIdAsync(int taskWorkId);
     }
 }

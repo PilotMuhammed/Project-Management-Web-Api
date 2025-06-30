@@ -23,7 +23,7 @@ namespace ProjectManagement.Application.ActivityLogs.Handlers
 
             return new ActivityLogDto
             {
-                ActivityId = log.ActivityId,
+                ActivityId = log.ActivityLogId,
                 UserId = log.UserId,
                 Action = log.Action,
                 CreatedAt = log.CreatedAt

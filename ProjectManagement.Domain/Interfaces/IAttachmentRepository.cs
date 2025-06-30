@@ -8,6 +8,7 @@ namespace ProjectManagement.Domain.Interfaces
         Task<IEnumerable<Attachment>> GetAllAsync();
         Task AddAsync(Attachment attachment);
         Task DeleteAsync(int attachmentId);
+        Task UpdateAsync(Attachment attachment);
         Task<IEnumerable<Attachment>> GetByTaskWorkIdAsync(int taskWorkId);
     }
 }

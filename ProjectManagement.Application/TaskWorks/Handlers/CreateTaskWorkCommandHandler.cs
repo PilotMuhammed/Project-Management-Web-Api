@@ -34,7 +34,7 @@ namespace ProjectManagement.Application.TaskWorks.Handlers
             };
 
             await _repository.AddAsync(taskWork);
-            return taskWork.TaskId;
+            return taskWork.TaskWorkId;
         }
     }
 }

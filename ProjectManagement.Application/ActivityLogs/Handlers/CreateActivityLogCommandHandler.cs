@@ -23,7 +23,7 @@ namespace ProjectManagement.Application.ActivityLogs.Handlers
                 CreatedAt = request.CreatedAt
             };
             await _repository.AddAsync(log);
-            return log.ActivityId;
+            return log.ActivityLogId;
         }
     }
 }

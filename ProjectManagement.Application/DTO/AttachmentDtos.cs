@@ -9,17 +9,18 @@ namespace ProjectManagement.Application.DTO.AttachmentDtos
     public class CreateAttachmentDto
     {
         public int TaskId { get; set; }
-        public string FileName { get; set; }
-        public string FilePath { get; set; }
+        public string? FileName { get; set; }
+        public string? FilePath { get; set; }
     }
 
     public class AttachmentDto
     {
         public int AttachmentId { get; set; }
-        public string FileName { get; set; }
-        public string FilePath { get; set; }
+        public int TaskId { get; set; }
+        public string? FileName { get; set; }
+        public string? FilePath { get; set; }
         public DateTime UploadedAt { get; set; }
-        public string TaskTitle { get; set; }
+        public string? TaskTitle { get; set; }
     }
 }
 

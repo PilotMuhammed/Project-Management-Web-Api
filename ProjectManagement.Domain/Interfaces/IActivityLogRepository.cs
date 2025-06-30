@@ -8,5 +8,6 @@ namespace ProjectManagement.Domain.Interfaces
         Task<IEnumerable<ActivityLog>> GetAllAsync();
         Task AddAsync(ActivityLog activityLog);
         Task<IEnumerable<ActivityLog>> GetByUserIdAsync(int userId);
+        Task DeleteAsync(int activityLogId);
     }
 }

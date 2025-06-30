@@ -9,9 +9,10 @@ namespace ProjectManagement.Application.DTO.ActivityLogDtos
     public class ActivityLogDto
     {
         public int ActivityId { get; set; }
-        public string Action { get; set; }
+        public int UserId { get; set; }
+        public string? Action { get; set; }
         public DateTime CreatedAt { get; set; }
-        public string UserFullName { get; set; }
+        public string? UserFullName { get; set; }
     }
 }
 

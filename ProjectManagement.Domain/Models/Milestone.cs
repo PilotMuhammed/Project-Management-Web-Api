@@ -10,13 +10,13 @@ namespace ProjectManagement.Domain.Models
     {
         public int MilestoneId { get; set; }
         public int ProjectId { get; set; }
-        public required Project Project { get; set; }
+        public Project? Project { get; set; }
 
-        public required string Name { get; set; }
+        public string? Name { get; set; }
         public DateTime DueDate { get; set; }
 
         public int StatusId { get; set; }
-        public required Status Status { get; set; }
+        public Status? Status { get; set; }
     }
 
 }

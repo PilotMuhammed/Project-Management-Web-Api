@@ -5,8 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Octopus.Client.Repositories;
+using System.Threading.Tasks; 
+using ProjectManagement.Domain.Interfaces;
+
 
 namespace ProjectManagement.Application.Projects.Handlers
 {

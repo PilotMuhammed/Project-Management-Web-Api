@@ -1,5 +1,5 @@
 using MediatR;
-using ProjectManagement.Application.DTO;
+using ProjectManagement.Application.DTO.TaskTagDtos;
 using ProjectManagement.Application.TaskTags.Queries;
 using ProjectManagement.Domain.Interfaces;
 

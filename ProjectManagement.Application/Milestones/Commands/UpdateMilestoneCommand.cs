@@ -6,7 +6,7 @@ namespace ProjectManagement.Application.Milestones.Commands
     {
         public int MilestoneId { get; set; }
         public int ProjectId { get; set; }
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public DateTime DueDate { get; set; }
         public int StatusId { get; set; }
     }

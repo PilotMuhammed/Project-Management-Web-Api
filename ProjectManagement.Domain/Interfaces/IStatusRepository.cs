@@ -6,5 +6,9 @@ namespace ProjectManagement.Domain.Interfaces
     {
         Task<Status> GetByIdAsync(int statusId);
         Task<IEnumerable<Status>> GetAllAsync();
+        Task AddAsync(Status status);
+        Task UpdateAsync(Status status);
+        Task DeleteAsync(int status);
+
     }
 }

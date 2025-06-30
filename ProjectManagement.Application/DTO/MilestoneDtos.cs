@@ -9,7 +9,7 @@ namespace ProjectManagement.Application.DTO.MilestoneDtos
     public class CreateMilestoneDto
     {
         public int ProjectId { get; set; }
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public DateTime DueDate { get; set; }
         public int StatusId { get; set; }
     }
@@ -18,7 +18,7 @@ namespace ProjectManagement.Application.DTO.MilestoneDtos
     {
         public int MilestoneId { get; set; }
         public int ProjectId { get; set; }
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public DateTime DueDate { get; set; }
         public int StatusId { get; set; }
     }
@@ -26,10 +26,12 @@ namespace ProjectManagement.Application.DTO.MilestoneDtos
     public class MilestoneDto
     {
         public int MilestoneId { get; set; }
-        public string Name { get; set; }
+        public int ProjectId { get; set; }
+        public string? Name { get; set; }
         public DateTime DueDate { get; set; }
-        public string ProjectName { get; set; }
-        public string StatusName { get; set; }
+        public string? ProjectName { get; set; }
+        public string? StatusName { get; set; }
+        public int StatusId { get; set; }
     }
 }
 

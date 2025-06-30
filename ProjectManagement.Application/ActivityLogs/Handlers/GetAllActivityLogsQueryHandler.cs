@@ -20,7 +20,7 @@ namespace ProjectManagement.Application.ActivityLogs.Handlers
             var logs = await _repository.GetAllAsync();
             return logs.Select(l => new ActivityLogDto
             {
-                ActivityId = l.ActivityId,
+                ActivityId = l.ActivityLogId,
                 UserId = l.UserId,
                 Action = l.Action,
                 CreatedAt = l.CreatedAt
