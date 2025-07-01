@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.StatusDtos;
+using ProjectManagement.Application.Statuses.Commands;
+using ProjectManagement.Application.Statuses.Queries;
 
 [ApiController]
 [Route("api/[controller]")]

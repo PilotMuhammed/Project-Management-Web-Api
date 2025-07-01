@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.NotificationDtos;
+using ProjectManagement.Application.Notifications.Commands;
+using ProjectManagement.Application.Notifications.Queries;
 
 [ApiController]
 [Route("api/[controller]")]

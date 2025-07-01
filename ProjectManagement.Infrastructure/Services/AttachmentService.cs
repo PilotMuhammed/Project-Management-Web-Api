@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ProjectManagement.Application.DTO;
 using ProjectManagement.Application.DTO.AttachmentDtos;
 using ProjectManagement.Application.Services.Interfaces;
 using ProjectManagement.Domain.Models;
@@ -22,7 +21,7 @@ namespace ProjectManagement.Application.Services
                     TaskId = a.TaskId,
                     FileName = a.FileName,
                     FilePath = a.FilePath,
-                    UploadDate = a.UploadDate
+                    UploadedAt = a.UploadedAt
                 }).ToListAsync();
         }
 
@@ -36,7 +35,7 @@ namespace ProjectManagement.Application.Services
                 TaskId = a.TaskId,
                 FileName = a.FileName,
                 FilePath = a.FilePath,
-                UploadDate = a.UploadDate
+                UploadedAt = a.UploadedAt
             };
         }
 
@@ -47,7 +46,7 @@ namespace ProjectManagement.Application.Services
                 TaskId = dto.TaskId,
                 FileName = dto.FileName,
                 FilePath = dto.FilePath,
-                UploadDate = dto.UploadDate
+                UploadedAt = dto.UploadedAt
             };
             _context.Attachments.Add(a);
             await _context.SaveChangesAsync();
@@ -62,7 +61,7 @@ namespace ProjectManagement.Application.Services
             a.TaskId = dto.TaskId;
             a.FileName = dto.FileName;
             a.FilePath = dto.FilePath;
-            a.UploadDate = dto.UploadDate;
+            a.UploadedAt = dto.UploadedAt;
             await _context.SaveChangesAsync();
             return dto;
         }

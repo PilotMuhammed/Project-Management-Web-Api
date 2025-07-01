@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ProjectManagement.Application.DTO;
 using ProjectManagement.Application.DTO.ProjectsDtos;
 using ProjectManagement.Application.Services.Interfaces;
 using ProjectManagement.Domain.Models;

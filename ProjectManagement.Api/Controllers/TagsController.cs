@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.TagDtos;
+using ProjectManagement.Application.Tags.Commands;
+using ProjectManagement.Application.Tags.Queries;
 
 [ApiController]
 [Route("api/[controller]")]

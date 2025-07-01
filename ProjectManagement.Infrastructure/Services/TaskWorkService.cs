@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ProjectManagement.Application.DTO;
 using ProjectManagement.Application.DTO.TaskWorkDtos;
 using ProjectManagement.Application.Services.Interfaces;
 using ProjectManagement.Domain.Models;
@@ -18,7 +17,7 @@ namespace ProjectManagement.Application.Services
             return await _context.TaskWorks
                 .Select(t => new TaskWorkDto
                 {
-                    TaskId = t.TaskId,
+                    TaskId = t.TaskWorkId,
                     ProjectId = t.ProjectId,
                     AssignedUserId = t.AssignedUserId,
                     Title = t.Title,
@@ -36,7 +35,7 @@ namespace ProjectManagement.Application.Services
             if (t == null) return null;
             return new TaskWorkDto
             {
-                TaskId = t.TaskId,
+                TaskId = t.TaskWorkId,
                 ProjectId = t.ProjectId,
                 AssignedUserId = t.AssignedUserId,
                 Title = t.Title,
@@ -63,7 +62,7 @@ namespace ProjectManagement.Application.Services
             };
             _context.TaskWorks.Add(t);
             await _context.SaveChangesAsync();
-            dto.TaskId = t.TaskId;
+            dto.TaskId = t.TaskWorkId;
             return dto;
         }
 

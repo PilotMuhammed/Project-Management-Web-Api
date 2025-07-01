@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.PriorityDtos;
+using ProjectManagement.Application.Priorities.Commands;
+using ProjectManagement.Application.Priorities.Queries;
 
 [ApiController]
 [Route("api/[controller]")]

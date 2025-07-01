@@ -1,5 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using ProjectManagement.Application.ActivityLogs.Commands;
+using ProjectManagement.Application.ActivityLogs.Queries;
 using ProjectManagement.Application.DTO.ActivityLogDtos;
 
 [ApiController]

@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.MilestoneDtos;
+using ProjectManagement.Application.Milestones.Commands;
+using ProjectManagement.Application.Milestones.Queries;
 
 [ApiController]
 [Route("api/[controller]")]

@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.TaskWorkDtos;
+using ProjectManagement.Application.TaskWorks.Commands;
+using ProjectManagement.Application.TaskWorks.Queries;
 
 [ApiController]
 [Route("api/[controller]")]

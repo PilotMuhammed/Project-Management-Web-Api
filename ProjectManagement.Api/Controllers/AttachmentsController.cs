@@ -1,6 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using ProjectManagement.Application.Attachments.Commands;
+using ProjectManagement.Application.Attachments.Queries;
 using ProjectManagement.Application.DTO.AttachmentDtos;
+
 
 [ApiController]
 [Route("api/[controller]")]

@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ProjectManagement.Application.DTO;
 using ProjectManagement.Application.DTO.NotificationDtos;
 using ProjectManagement.Application.Services.Interfaces;
 using ProjectManagement.Domain.Models;
@@ -20,8 +19,8 @@ namespace ProjectManagement.Application.Services
                 {
                     NotificationId = n.NotificationId,
                     UserId = n.UserId,
-                    Content = n.Content,
-                    DateSent = n.DateSent,
+                    Message = n.Message,
+                    CreatedAt = n.CreatedAt,
                     IsRead = n.IsRead
                 }).ToListAsync();
         }
@@ -34,8 +33,8 @@ namespace ProjectManagement.Application.Services
             {
                 NotificationId = n.NotificationId,
                 UserId = n.UserId,
-                Content = n.Content,
-                DateSent = n.DateSent,
+                Message = n.Message,
+                CreatedAt = n.CreatedAt,
                 IsRead = n.IsRead
             };
         }
@@ -45,8 +44,8 @@ namespace ProjectManagement.Application.Services
             var n = new Notification
             {
                 UserId = dto.UserId,
-                Content = dto.Content,
-                DateSent = dto.DateSent,
+                Message = dto.Message,
+                CreatedAt = dto.CreatedAt,
                 IsRead = dto.IsRead
             };
             _context.Notifications.Add(n);
@@ -60,8 +59,8 @@ namespace ProjectManagement.Application.Services
             var n = await _context.Notifications.FindAsync(id);
             if (n == null) return null;
             n.UserId = dto.UserId;
-            n.Content = dto.Content;
-            n.DateSent = dto.DateSent;
+            n.Message = dto.Message;
+            n.CreatedAt = dto.CreatedAt;
             n.IsRead = dto.IsRead;
             await _context.SaveChangesAsync();
             return dto;

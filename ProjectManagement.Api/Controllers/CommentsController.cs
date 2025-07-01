@@ -1,5 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using ProjectManagement.Application.Comments.Commands;
+using ProjectManagement.Application.Comments.Queries;
 using ProjectManagement.Application.DTO.CommentDtos;
 
 [ApiController]

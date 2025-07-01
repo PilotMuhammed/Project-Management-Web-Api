@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.UserDtos;
+using ProjectManagement.Application.Users.Commands;
+using ProjectManagement.Application.Users.Queries;
 
 [ApiController]
 [Route("api/[controller]")]

@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ProjectManagement.Application.DTO;
 using ProjectManagement.Application.DTO.ActivityLogDtos;
 using ProjectManagement.Application.Services.Interfaces;
 using ProjectManagement.Domain.Models;
@@ -18,10 +17,10 @@ namespace ProjectManagement.Application.Services
             return await _context.ActivityLogs
                 .Select(a => new ActivityLogDto
                 {
-                    ActivityLogId = a.ActivityLogId,
+                    ActivityId = a.ActivityLogId,
                     UserId = a.UserId,
                     Action = a.Action,
-                    Timestamp = a.Timestamp
+                    CreatedAt = a.CreatedAt
                 }).ToListAsync();
         }
 
@@ -31,10 +30,10 @@ namespace ProjectManagement.Application.Services
             if (a == null) return null;
             return new ActivityLogDto
             {
-                ActivityLogId = a.ActivityLogId,
+                ActivityId = a.ActivityLogId,
                 UserId = a.UserId,
                 Action = a.Action,
-                Timestamp = a.Timestamp
+                CreatedAt = a.CreatedAt
             };
         }
 
@@ -44,11 +43,11 @@ namespace ProjectManagement.Application.Services
             {
                 UserId = dto.UserId,
                 Action = dto.Action,
-                Timestamp = dto.Timestamp
+                CreatedAt = dto.CreatedAt
             };
             _context.ActivityLogs.Add(a);
             await _context.SaveChangesAsync();
-            dto.ActivityLogId = a.ActivityLogId;
+            dto.ActivityId = a.ActivityLogId;
             return dto;
         }
 
@@ -58,7 +57,7 @@ namespace ProjectManagement.Application.Services
             if (a == null) return null;
             a.UserId = dto.UserId;
             a.Action = dto.Action;
-            a.Timestamp = dto.Timestamp;
+            a.CreatedAt = dto.CreatedAt;
             await _context.SaveChangesAsync();
             return dto;
         }
