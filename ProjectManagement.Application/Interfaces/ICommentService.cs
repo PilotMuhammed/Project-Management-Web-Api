@@ -1,5 +1,4 @@
-﻿using ProjectManagement.Application.DTO;
-using ProjectManagement.Application.DTO.CommentDtos;
+﻿using ProjectManagement.Application.DTO.CommentDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

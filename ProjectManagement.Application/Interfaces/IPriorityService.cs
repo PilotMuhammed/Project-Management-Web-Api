@@ -1,5 +1,4 @@
-﻿using ProjectManagement.Application.DTO;
-using ProjectManagement.Application.DTO.PriorityDtos;
+﻿using ProjectManagement.Application.DTO.PriorityDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

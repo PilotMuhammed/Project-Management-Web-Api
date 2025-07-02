@@ -1,6 +1,5 @@
 using MediatR;
 using ProjectManagement.Application.Comments.Queries;
-using ProjectManagement.Application.DTO;
 using ProjectManagement.Application.DTO.CommentDtos;
 using ProjectManagement.Domain.Interfaces;
 

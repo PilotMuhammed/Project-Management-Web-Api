@@ -1,6 +1,5 @@
 using MediatR;
 using ProjectManagement.Application.ActivityLogs.Queries;
-using ProjectManagement.Application.DTO;
 using ProjectManagement.Application.DTO.ActivityLogDtos;
 using ProjectManagement.Domain.Interfaces;
 

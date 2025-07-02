@@ -3,7 +3,6 @@ using ProjectManagement.Application.Users.Commands;
 using ProjectManagement.Domain.Interfaces;
 using ProjectManagement.Domain.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;

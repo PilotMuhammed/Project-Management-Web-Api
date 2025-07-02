@@ -1,5 +1,4 @@
-﻿using ProjectManagement.Application.DTO;
-using ProjectManagement.Application.DTO.StatusDtos;
+﻿using ProjectManagement.Application.DTO.StatusDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

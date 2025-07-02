@@ -1,5 +1,4 @@
 using MediatR;
-using ProjectManagement.Application.DTO;
 using ProjectManagement.Application.DTO.PriorityDtos;
 using ProjectManagement.Application.Priorities.Queries;
 using ProjectManagement.Domain.Interfaces;

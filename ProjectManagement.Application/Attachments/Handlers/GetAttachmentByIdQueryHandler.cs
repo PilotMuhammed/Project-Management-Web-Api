@@ -1,6 +1,5 @@
 using MediatR;
 using ProjectManagement.Application.Attachments.Queries;
-using ProjectManagement.Application.DTO;
 using ProjectManagement.Application.DTO.AttachmentDtos;
 using ProjectManagement.Domain.Interfaces;
 

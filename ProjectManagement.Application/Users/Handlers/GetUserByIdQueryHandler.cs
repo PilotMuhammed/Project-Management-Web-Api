@@ -4,7 +4,6 @@ using ProjectManagement.Application.DTO.UserDtos;
 using ProjectManagement.Application.Users.Queries;
 using ProjectManagement.Domain.Interfaces;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;

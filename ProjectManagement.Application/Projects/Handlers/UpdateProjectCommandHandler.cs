@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using ProjectManagement.Application.Projects.Commands;
-using ProjectManagement.Domain.Models;
 using ProjectManagement.Domain.Interfaces;
 
 namespace ProjectManagement.Application.Projects.Handlers

@@ -1,5 +1,4 @@
-﻿using ProjectManagement.Application.DTO;
-using ProjectManagement.Application.DTO.TagDtos;
+﻿using ProjectManagement.Application.DTO.TagDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
