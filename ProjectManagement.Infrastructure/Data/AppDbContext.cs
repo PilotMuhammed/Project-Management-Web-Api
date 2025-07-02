@@ -1,13 +1,26 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using ProjectManagement.Domain.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using ProjectManagement.Domain.Models;
 
 namespace ProjectManagement.Infrastructure.Data
 {
+    // This class is used by EF Core Only when performing Add-Migration || Update-Database
+    public class AppDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
+    {
+        public AppDbContext CreateDbContext(string[] args)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
+            optionsBuilder.UseNpgsql("Host=localhost;Database=ProjectManagementDb;Username=postgres;Password=pilot");
+
+            return new AppDbContext(optionsBuilder.Options);
+        }
+    }
+
 
     public class AppDbContext : DbContext
     {
@@ -31,7 +44,7 @@ namespace ProjectManagement.Infrastructure.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // تعريف المفتاح المركب لجدول الربط
+            // Definition of the composite key of the binding table
             modelBuilder.Entity<TaskTag>()
                 .HasKey(tt => new { tt.TaskId, tt.TagId });
         }
