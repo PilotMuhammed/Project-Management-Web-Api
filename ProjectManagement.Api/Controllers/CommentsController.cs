@@ -1,9 +1,11 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.Comments.Commands;
 using ProjectManagement.Application.Comments.Queries;
 using ProjectManagement.Application.DTO.CommentDtos;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class CommentsController : ControllerBase

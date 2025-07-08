@@ -1,9 +1,11 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.PriorityDtos;
 using ProjectManagement.Application.Priorities.Commands;
 using ProjectManagement.Application.Priorities.Queries;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class PrioritiesController : ControllerBase

@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.ProjectsDtos;
 using ProjectManagement.Application.Projects.Commands;
@@ -6,6 +7,7 @@ using ProjectManagement.Application.Projects.Queries;
 
 namespace ProjectManagement.Api.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ProjectsController : ControllerBase

@@ -1,9 +1,11 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.TaskTagDtos;
 using ProjectManagement.Application.TaskTags.Commands;
 using ProjectManagement.Application.TaskTags.Queries;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class TaskTagsController : ControllerBase

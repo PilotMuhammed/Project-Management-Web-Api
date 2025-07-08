@@ -1,9 +1,11 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.MilestoneDtos;
 using ProjectManagement.Application.Milestones.Commands;
 using ProjectManagement.Application.Milestones.Queries;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class MilestonesController : ControllerBase

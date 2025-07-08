@@ -1,10 +1,11 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.Attachments.Commands;
 using ProjectManagement.Application.Attachments.Queries;
 using ProjectManagement.Application.DTO.AttachmentDtos;
 
-
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class AttachmentsController : ControllerBase

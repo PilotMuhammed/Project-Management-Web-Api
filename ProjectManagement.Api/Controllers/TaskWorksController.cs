@@ -1,9 +1,11 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManagement.Application.DTO.TaskWorkDtos;
 using ProjectManagement.Application.TaskWorks.Commands;
 using ProjectManagement.Application.TaskWorks.Queries;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class TaskWorksController : ControllerBase
